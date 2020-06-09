@@ -2,11 +2,11 @@ const chai = require('chai');
 const chaiHttp = require('chai-http');
 chai.use(chaiHttp);
 
-function postRequestResponse(url, resources, authKey, authValue, body) {
+function patchRequestResponse(url, resources, authKey, authValue, body) {
   return chai.request(url)
-    .post(resources)
+    .patch(resources)
     .set(authKey, authValue)
     .send(body)
 }
 
-module.exports = postRequestResponse;
+module.exports = patchRequestResponse;

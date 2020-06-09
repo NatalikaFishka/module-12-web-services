@@ -4,7 +4,7 @@
   "description": "Web Services basics",
   "main": "index.js",
   "scripts": {
-    "test": "mocha"
+    "test": "mocha-parallel-tests"
   },
   "repository": {
     "type": "git",

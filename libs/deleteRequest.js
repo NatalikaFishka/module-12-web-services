@@ -2,10 +2,10 @@ const chai = require('chai');
 const chaiHttp = require('chai-http');
 chai.use(chaiHttp);
 
-function getRequestResponse(url, resources, authKey = 'Any', authValue = 'Value') {
+function deleteRequestResponse(url, resources, authKey, authValue) {
   return chai.request(url)
-    .get(resources)
+    .delete(resources)
     .set(authKey, authValue)
 }
 
-module.exports = getRequestResponse;
+module.exports = deleteRequestResponse;
