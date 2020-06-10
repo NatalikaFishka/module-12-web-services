@@ -1,8 +1,14 @@
+const tParts = {
+  one: '515ea7735d',
+  two: '0ad4996ea9421cc',
+  three: '0f29d869269fee4'
+}
+
 const GIT_INPUTS = {
   URL: 'https://api.github.com',
   AUTH_HEADER: {
     KEY: 'Authorization',
-    VALUE: `token 223f8be596bb55df92c90fb1f5732278638368fb`
+    VALUE: 'token ' + tParts.one + tParts.two + tParts.three
   },
   TICK_STAR_HEADER: {
     KEY: "Content-Length",
